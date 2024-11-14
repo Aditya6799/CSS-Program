@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('scene1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 123, 255, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.abc {
+    position: relative;
+    left: 250px;
+    top: -150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: aqua;
+}
+.section {
+    padding: 40px 0;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.project {
+    background: #fff;
+    color: #333;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.project a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #007BFF;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+footer .social-media {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social-media li {
+    display: inline;
+    margin-right: 15px;
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+}
+footer .social-media a:hover {
+    color: aqua;
+}
+input {
+    width: 45%;
+    height: 30px;
+    border-radius: 5px;
+}
+textarea {
+    width: 45%;
+    height: 50px;
+    border-radius: 5px;
+}
+button {
+    width: 12%;
+    height: 25px;
+    background-color: blue;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: aquamarine;
+}
+    </style>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = this.querySelector('input[type="text"]').value;
+    const email = this.querySelector('input[type="email"]').value;
+    const message = this.querySelector('textarea').value;
+
+    if (name && email && message) {
+        alert(`Thank you, ${name}! Your message has been sent.`);
+        this.reset();
+    } else {
+        alert('Please fill in all fields.');
+    }
+});
+
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <h2>Aditya kumar</h2>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="Adiphoto.jpg" alt="My Photo" class="profile-photo">
+            <p class="abc">Hi! I'm a web developer with a passion for creating interactive and responsive web applications. I enjoy learning new technologies and improving my skills.</p>
+            <p class="abc">I have experience in HTML, CSS, JavaScript, and various frameworks. I also have good knowledge of phython. My goal is to build user-friendly and efficient applications.<br>
+            <a href="https://www.linkedin.com/in/aditya-kumar-a101a1321/" target="_blank">
+                <button type="submit">Hire me</button>
+            </a></p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1: Portfolio Website</h3>
+                <p>A personal portfolio website built using HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/myusername/project1" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2: E-Waste Disposal Guide Website</h3>
+                <p> A Website that shows information about what is E-waste and howto dispose it.</p>
+                <a href="https://github.com/Aditya6799" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 3: Project in progress.</h3>
+                <p>A project of making a simple website.</p>
+                <a href="https://github.com/Aditya6799" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="Your Name">Name:  </label><br>
+                <input type="text" placeholder="Your Name" required><br>
+                <label for="Your Email">Email:  </label><br>
+                <input type="email" placeholder="Your Email" required><br>
+                <label for="Your Message">Message: </label><br>
+                <textarea placeholder="Your Message" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio</p>
+            <ul class="social-media">
+                <li><a href="https://x.com/Adityakumar6799" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/Aditya6799" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/aditya-kumar-a101a1321/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

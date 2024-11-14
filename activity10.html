@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Kumar Portfolio</title>
+    
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+        .ab{
+            text-align: center;
+            color: blue;
+            background-color: #ddd;
+        }
+        
+        header {
+            background-color: #444;
+            color: blue;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin-bottom: 5px;
+        }
+        
+        header nav ul {
+            list-style-type: none;
+        }
+        
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        header nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        section {
+            padding: 20px;
+        }
+        
+        h2 {
+            color: #cc9999;
+            margin-bottom: 10px;
+        }
+        
+        #projects .project {
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        table caption {
+            text-align: left;
+            color: #cc9999;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f8f1f1;
+            color: #090909;
+        }
+        
+        footer {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        #contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #contact label {
+            margin-top: 10px;
+        }
+        
+        #contact input[type="text"],
+        #contact input[type="email"] {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        
+        #contact input[type="radio"] {
+            margin: 5px;
+        }
+        
+        #contact button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #contact button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="ab">
+            <h1>Aditya Kumar</h1>
+                <p>Web Developer & Designer</p>
+            </div>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Aditya Kumar, a passionate web developer with a love for creating beautiful and functional
+            websites. I have experience in HTML, CSS, JavaScript, and more.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>A description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>A description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <table>
+            <caption>Project Statistics</caption>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Technologies</th>
+                    <th>Completion Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Project 1</td>
+                    <td>HTML, CSS, JavaScript</td>
+                    <td>June 2024</td>
+                </tr>
+                <tr>
+                    <td>Project 2</td>
+                    <td>React, Node.js</td>
+                    <td>August 2024</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <p>Preferred Contact Method:</p>
+            <input type="radio" id="emailContact" name="contactMethod" value="email" checked>
+            <label for="emailContact">Email</label>
+            <input type="radio" id="phoneContact" name="contactMethod" value="phone">
+            <label for="phoneContact">Phone</label>
+
+            <label for="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                Subscribe to newsletter
+            </label>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aditya Kumar. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

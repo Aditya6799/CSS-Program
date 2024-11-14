@@ -1,0 +1,37 @@
+h1{
+    color: blue;
+    font-size:40px
+}
+p{
+    color: white;
+    background-color: gray;
+}
+#div-container{
+    color: blue;
+    background-color: gray;
+}
+.paragraph-class{
+    color: white;
+    font-family: monospace;
+    background-color: purple;
+}
+*{
+    color: white;
+    background-color: black;
+}
+#div-container, .paragraph-class, h1{
+    color: white;
+    background-color: purple;
+    font-family: monospace;
+}
+a[href="https://www.lpu.in/"]
+{
+    color: green;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: block;
+    width: 50%;
+}

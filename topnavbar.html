@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: yellow;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #555;
+                color: white;
+            }
+            .active {
+                background-color: green;
+            }
+            li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+            }
+            li {
+                text-align: center;
+                border-bottom: 1px solid #555;
+            }
+            li:last-child {
+                border-bottom: none;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+    </body>
+</html>

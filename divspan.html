@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DIV vs SPAN</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 20px;
+            }
+            .container {
+                margin-bottom: 20px;
+            }
+            .box {
+                border: 2px solid #333;
+                padding: 10px;
+                margin: 10px 0;
+            }
+            .box div {
+                background-color: red;
+                padding: 10px;
+                margin: 10px 0;
+            }
+            .box span {
+                background-color: green;
+                padding: 5px;
+            }
+            .box p {
+                margin: 10px 0;
+            }
+            .box h2 {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Understanding DIV and SPAN Tags</h1>
+        <div class="container">
+            <div class="box">
+                <h2>DIV Tag</h2>
+                <p>The<code>&lt;div&gt;</code>tag is a block level element.</p>
+                <div>
+                    <p>This is an example of a <code>&lt;div&gt;<</code>tag in action. It ctreates a lock level container.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box">
+                <h2>SPAN Tag</h2>
+                <p>The<code>&lt;span&gt;</code>tag is an inline element.</p>
+                <p>This is an example of a <code>&lt;span&gt;<</code>tag in action.</p>
+                <span>This text is inside a <code>&lt;span&gt;<</code>tag.</span>
+            </div>
+        </div>
+    </body>
+</html>

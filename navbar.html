@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                background-color: yellow;
+            }
+            li a {
+                display: block;
+                color: black;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #555;
+                color: white;
+            }
+            li a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+            li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+            }
+            li {
+                text-align: center;
+                border-bottom: 1px solid #555;
+            }
+            li:last-child {
+                border-bottom: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Vertical navigation bar</h2>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,th,td{
+                border-bottom: 2px solid yellowgreen;
+                border-collapse: collapse;
+                padding: 10px;
+                text-align: center;
+                color: blue;
+            }
+            table{
+                width: 100%;
+                background-image: url("scene1.jpg");
+            }
+            tr:hover{
+                background-color: rgb(144, 233, 203);
+            }
+        </style>
+    </head>
+    <body>
+        <table >
+            <thead>
+                <th>Name</th>
+                <th colspan="2">Marks</th>
+                <th>Total Marks</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Rehman</td>
+                    <td>Sub 1</td>
+                    <td>95</td>
+                    <td rowspan="2">195</td>
+                </tr>
+                <tr>
+                    <td>Sub 2</td>
+                    <td>100</td>
+                </tr>
+                <tr>                   
+                    <td rowspan="2">Asif</td>
+                    <td>Sub 1</td>
+                    <td>95</td>
+                    <td rowspan="2">193</td>
+                </tr>
+                <tr>
+                    <td>Sub 2</td>
+                    <td>98</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
